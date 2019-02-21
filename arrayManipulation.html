@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Show odd numbers</p>
+
+<p id="demo"></p>
+
+<script>
+
+const str = [1,7,34,3];
+
+function showOdd(arr){
+  const abc = arr.reduce((accumulator, num) => { 
+      if (num % 2 !== 0) {
+        accumulator.push(num); 
+      }
+      return accumulator;
+  }, []);
+  return abc;
+}
+
+  document.getElementById("demo").innerHTML = showOdd(str);
+
+</script>
+
+</body>
+</html>
